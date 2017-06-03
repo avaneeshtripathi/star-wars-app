@@ -1,0 +1,30 @@
+[{
+    "name" : "BB-8",
+    "image" : "starwars-bb-8.png",
+    "about" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi accusantium ab sunt, laborum eum quos laudantium nulla voluptatibus sed, tempora voluptate veritatis molestias odit possimus quibusdam assumenda, asperiores magnam harum?"
+},
+{
+    "name" : "Stormtrooper",
+    "image" : "starwars-stormtrooper.png",
+    "about" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi accusantium ab sunt, laborum eum quos laudantium nulla voluptatibus sed, tempora voluptate veritatis molestias odit possimus quibusdam assumenda, asperiores magnam harum?"
+},
+{
+    "name" : "R2-D2",
+    "image" : "starwars-r2-d2.png",
+    "about" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi accusantium ab sunt, laborum eum quos laudantium nulla voluptatibus sed, tempora voluptate veritatis molestias odit possimus quibusdam assumenda, asperiores magnam harum?"
+},
+{
+    "name" : "Darth Vader",
+    "image" : "starwars-darth-vader.png",
+    "about" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi accusantium ab sunt, laborum eum quos laudantium nulla voluptatibus sed, tempora voluptate veritatis molestias odit possimus quibusdam assumenda, asperiores magnam harum?"
+},
+{
+    "name" : "Boba Fett",
+    "image" : "starwars-boba-fett.png",
+    "about" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi accusantium ab sunt, laborum eum quos laudantium nulla voluptatibus sed, tempora voluptate veritatis molestias odit possimus quibusdam assumenda, asperiores magnam harum?"
+},
+{
+    "name" : "C-3PO",
+    "image" : "starwars-c-3po.png",
+    "about" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi accusantium ab sunt, laborum eum quos laudantium nulla voluptatibus sed, tempora voluptate veritatis molestias odit possimus quibusdam assumenda, asperiores magnam harum?"
+}]

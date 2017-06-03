@@ -1,0 +1,219 @@
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+body
+  background-color: $greyBackgroundEC
+
+h1
+  @include fontStyle(36px, $greyShade66, bold, 40px)
+
+h2
+  @include fontStyle(56px, $greyShade66, bold, 70px)
+
+p
+  @include fontStyle(16px, $greyShade66, normal, 24px)
+
+.container
+  padding: 0 15px
+  margin: 0 auto
+
+.imageWrapper
+  img
+    height: 100%
+    display: block
+
+.button
+  @include fontStyle(18px, $white, bold, 50px)
+  text-transform: uppercase
+  border: none
+  border-radius: 2px
+  cursor: pointer
+
+.buttonOrange
+  background: $lightOrange
+
+.buttonYellow
+  background: $lightYellow
+
+.errorMessage
+  @include fontStyle(14px, $red, normal, 20px)
+
+.formControls
+  margin-bottom: 10px
+  background: $white
+  input
+    border: 1px solid $lightGrey91
+    border-radius: 2px
+    width: 100%
+    padding: 10px
+    background: transparent
+    @include fontStyle(16px, $black, normal, 28px)
+
+.validField
+  i
+    background-color: $green
+    &:after
+      content: ''
+      width: 3px
+      height: 6px
+      border: solid $white
+      border-width: 0 2px 2px 0
+      transform: rotate(45deg)
+      position: absolute
+      left: 8px
+      top: 5px
+
+.invalidField
+  i
+    background-color: $red
+    &::before, &::after
+      position: absolute
+      left: 9px
+      top: 5px
+      content: ''
+      height: 10px
+      width: 2px
+      background-color: $white
+    &::before
+      transform: rotate(45deg)
+    &::after
+      transform: rotate(-45deg)
+
+.listHeading
+  margin-bottom: 40px
+  position: relative
+  &::before
+    content: ''
+    background-color: $greyShadeD11
+    height: 6px
+    width: 100px
+    position: absolute
+    top: -6px
+
+/* login screen */
+.loginFormWrapper
+  width: 100%
+  margin: 250px auto 0
+  position: relative
+  .initialImage
+    height: 350px
+    position: absolute
+    top: -300px
+    left: 50%
+    margin-left: -175px
+  h1
+    text-align: center
+    margin-bottom: 30px
+  .errorMessage
+    margin-bottom: 10px
+  .formControls
+    position: relative
+    i
+      position: absolute
+      border-radius: 50%
+      width: 20px
+      height: 20px
+      right: 10px
+      top: 50%
+      margin-top: -10px
+      &::before, &::after
+        position: absolute
+        content: ''
+    input
+      position: relative
+      z-index: 9
+  .buttonOrange
+    width: 100%
+
+/* character list */
+.characterListWrapper
+  padding-top: 160px
+  .listText
+    margin-bottom: 20px
+  .buttonYellow
+    padding: 0 20px
+
+.characterListWrap
+  overflow-x: auto
+  padding-bottom: 40px
+  margin-bottom: 40px
+
+.characterListing
+  list-style-type: none
+  li
+    cursor: pointer
+    position: relative
+    display: table-cell
+  .imageWrapper
+    height: 170px
+  input[type=radio]
+    position: absolute
+    visibility: hidden
+  label
+    display: block
+    position: relative
+    z-index: 9
+    cursor: pointer
+    -webkit-transition: all 0.25s linear
+  .check
+    display: block
+    position: absolute
+    border: 5px solid $darkGreyShadeAA
+    border-radius: 100%
+    height: 24px
+    width: 24px
+    bottom: -20px
+    left: 50%
+    margin-left: -12px
+    z-index: 5
+    transition: border .25s linear
+    -webkit-transition: border .25s linear
+  .check::before
+    display: block
+    position: absolute
+    content: ''
+    border-radius: 100%
+    height: 8px
+    width: 8px
+    top: 3px
+    left: 3px
+    margin: auto
+    transition: background 0.25s linear
+    -webkit-transition: background 0.25s linear
+  input[type=radio]:checked ~
+    .check
+      border: 5px solid $greyCheckedRadio
+      &::before
+        background: $greyCheckedRadio
+    label
+      color: $greyCheckedRadio
+
+/* character details */
+.characterDetailsWrapper
+  padding-top: 80px
+  h3
+    @include fontStyle(14px, $greyShade66, bold, 20px)
+    margin-bottom: 40px
+    .backArrow
+      font-size: 20px
+  .listHeading
+    margin-bottom: 150px
+
+.characterDescription
+  position: relative
+  border: 1px solid $lightGrey91
+  border-radius: 4px
+  padding: 60px 40px 40px
+  background: $white
+  text-align: center
+  .imageWrapper
+    position: absolute
+    height: 300px
+    top: -200px
+    left: 50%
+    margin-left: -150px
+  h2
+    margin-bottom: 20px
+    word-break: break-word
